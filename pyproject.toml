@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "TerraGPS"
+version = "0.1.0"
+description = "A simple class to get the position of a player in Terraria via the Terraria API and paint it onto the world image"
+authors = ["Martin George <marty@dii.ngo>"]
+license = "MIT"
+readme = "README.md"
+packages = [
+    { include = "TerraGPS" },
+]
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.28.2"
+pillow = "^9.4.0"
+ttf-opensans = "^2020.10.30"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
