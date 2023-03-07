@@ -20,7 +20,6 @@ class TerraGPS:
         self.log.info("TerrariaGPS: Creating player map...")
         self.paintPlayersontoImage(self.input_image, self.output_image)
         self.log.info("TerrariaGPS: Player map created!")
-        print(__name__)
 
     def initLogging(self):
         self.log = logging.getLogger("TerrariaGPS")
