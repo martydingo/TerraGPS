@@ -23,5 +23,5 @@ tGPS = TerraGPS(
     output_image=output_image,
 )
 
-tGPS.run()
+tGPS.generateMap()
 ```
