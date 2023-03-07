@@ -13,7 +13,14 @@ class TerraGPS:
         self.log.debug(
             f"TerrariaGPS: Initializing with token {self.token} and uri {self.uri}"
         )
-        self.paintPlayersontoImage(input_image, output_image)
+        self.input_image = input_image
+        self.output_image = output_image
+
+    def generateMap(self):
+        self.log.info("TerrariaGPS: Creating player map...")
+        self.paintPlayersontoImage(self.input_image, self.output_image)
+        self.log.info("TerrariaGPS: Player map created!")
+        print(__name__)
 
     def initLogging(self):
         self.log = logging.getLogger("TerrariaGPS")
@@ -114,10 +121,12 @@ if __name__ == "__main__":
 
     args = preArgs.parse_args()
 
-    terrariaGPS = TerraGPS(
+    tGPS = TerraGPS(
         tshock_token=args.token,
         tshock_host=args.host,
         tshock_port=args.port,
         input_image=args.input_image,
         output_image=args.output_image,
     )
+
+    tGPS.generateMap()

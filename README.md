@@ -22,4 +22,6 @@ tGPS = TerraGPS(
     input_image=input_image,
     output_image=output_image,
 )
+
+tGPS.run()
 ```

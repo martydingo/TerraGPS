@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "TerraGPS"
-version = "0.1.0"
+version = "0.2.0"
 description = "A simple class to get the position of a player in Terraria via the Terraria API and paint it onto the world image"
 authors = ["Martin George <marty@dii.ngo>"]
 license = "MIT"
